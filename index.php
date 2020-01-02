@@ -16,15 +16,16 @@
         <img src="assets/img/pictureDB.jpg" alt="Picture of Denis Bourgeois">
         <div id="about">
             <h3>Bourgeois Denis</h3>
+            <div class="content">
+                <div class="assets" id="EN"><img src="assets/img/flag-en.svg" alt=""><p>B2</p></div>
+                <div class="assets" id="NL"><img src="assets/img/flag-nl.svg" alt=""><p>A2</p></div>
+                <div class="assets" id="license"><img src="assets/img/car.svg" alt=""><p>Permis B.</p></div>
+            </div>
             <div class="title">
                 <h2>About me</h2>
                 <div></div>
             </div>
-            <div class="content">
-                <div class="EN"><img src="assets/img/flag-en.svg" alt=""><p>B2</p></div>
-                <div class="NL"><img src="assets/img/flag-nl.svg" alt=""><p>A2</p></div>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quam, cumque voluptatibus inventore doloribus vero sed.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit, in magni recusandae temporibus culpa officia suscipit facilis minus cumque reiciendis eos velit iste corporis debitis rerum, ipsam dolore voluptates!</p>
         </div>
     </section>
 
