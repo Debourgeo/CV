@@ -1,6 +1,6 @@
 # Project Title - **CV**
 
-![screenshot](assets/img/screenshot-CV.png)
+![screenshot](assets/img/Screenshot-CV.png)
 
 ## Presentation
 
