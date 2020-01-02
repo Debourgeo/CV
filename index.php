@@ -132,14 +132,14 @@
             </div>
             <section id="technologies">
                 <ul class="part1">
-                    <li><img src="assets/img/html.svg" alt="HTML Logo"></a>HTML</li>
-                    <li><img src="assets/img/css.svg" alt="CSS Logo"></a>CSS</li>
-                    <li><img src="assets/img/sass.svg" alt="SASS Logo"></a>SASS</li>
+                    <li><img src="assets/img/html.svg" alt="HTML Logo">HTML</li>
+                    <li><img src="assets/img/css.svg" alt="CSS Logo">CSS</li>
+                    <li><img src="assets/img/sass.svg" alt="SASS Logo">SASS</li>
                 </ul>
                 <ul class="part2">
-                    <li><img src="assets/img/js.svg" alt="JS Logo"></a>JS</li>
-                    <li><img src="assets/img/php.svg" alt="PHP Logo"></a>PHP</li>
-                    <li><img src="assets/img/git.svg" alt="GIT Logo"></a>Git</li>
+                    <li><img src="assets/img/js.svg" alt="JS Logo">JS</li>
+                    <li><img src="assets/img/php.svg" alt="PHP Logo">PHP</li>
+                    <li><img src="assets/img/git.svg" alt="GIT Logo">Git</li>
                 </ul>
             </section>
 
