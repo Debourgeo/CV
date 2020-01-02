@@ -25,8 +25,8 @@ main {
 
 // ----- Style -----
 
-.headline {
-    .strip-left {
+#headline {
+    .strip {
         position: relative;
         display: inline-block;
         width: auto;
@@ -39,28 +39,78 @@ main {
             width: 80%;
         }
     }
-    .strip-right {
-        position: relative;
-        display: inline-block;
-        width: auto;
-        padding: 0 10%;
-        &:before {
-            position: absolute;
-            content: "";
-            margin-top: 34px; /* half the line-height */
-            border-top: 2px solid $orange-ish;
-            width: 80%;
+    h1 {
+        margin: 0;
+        padding: 15px 0;
+        line-height: 1.2em;
+    }
+}
+
+#introduction {
+    padding: 10px;
+    img {
+        width: 170px;
+        height: 170px;
+        box-sizing: content-box;
+        margin: 0 20px;
+        border-radius: 3px;
+    }
+    #content {
+        h3 {
+            font-weight: 600;
+            color: white;
+            position: relative;
+            display: inline-block;
+            padding: 5px 10px;
+            line-height: 1.2em;
+            z-index: 0;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transform: skew(-30deg);
+                z-index: -1;
+                border: 1px solid black;
+                background: $darkergrey-ish;
+            }
+        }
+        ul {
+            padding: 10px;
+            li {
+                padding-left: 5px;
+                width: max-content;
+                img {
+                    width: 25px;
+                    height: 25px;
+                    vertical-align: middle;
+                    padding-right: 10px;
+                    margin: 0;
+                }
+            }
+            .split {
+                width: 90%;
+            }
+        }
+        p {
+            margin: auto;
+            padding: 10px 20px;
+            border-left: 2px solid $orange-ish;
         }
     }
 }
 
-h1 {
-    margin: 0;
-    padding: 15px 0;
-    line-height: 1.2em;
+ul {
+    li {
+        padding: 5px 10px;
+    }
 }
 
 .title {
+    height: auto;
+    padding: 0 5px;
     h2 {
         color: black;
         position: relative;
@@ -96,23 +146,59 @@ h1 {
     }
 }
 
-.split-one,
-.split-two {
+.split {
+    padding: 5px 15px;
+    h4 {
+        color: white;
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        line-height: 0.8em;
+        z-index: 0;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: skew(-30deg);
+            z-index: -1;
+            border: 1px solid black;
+            background: $darkergrey-ish;
+        }
+    }
+    div {
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        line-height: 0.8em;
+        &:before {
+            position: absolute;
+            content: "";
+            margin-top: 0.4em; /* half the line-height */
+            border-top: 1px solid black;
+            width: 95%;
+        }
+    }
+}
+
+.line {
     position: relative;
-    display: inline-block;
-    padding: 5px;
+    padding-top: 5px;
+    margin-bottom: 15px;
     &:before {
         position: absolute;
-        left: 5%;
         content: "";
+        margin: 0.2em; /* half the line-height */
         border-top: 1px solid black;
         width: 90%;
     }
 }
 
-ul {
-    li {
-        padding: 5px;
+.list {
+    .list-item {
+        padding: 5px 5px 5px 30px;
         abbr[title] {
             text-decoration: none;
             &:after {
@@ -122,9 +208,9 @@ ul {
                 padding: 0 5px;
             }
         }
-        ul {
-            li {
-                padding: 10px 0 0 25px;
+        .sub-list {
+            .sub-list-item {
+                padding: 6px 0 4px 25px;
                 span {
                     &:before {
                         padding-right: 5px;
@@ -147,13 +233,7 @@ span {
     width: 120px;
 }
 
-.studies,
-.formations,
-.experience {
-    padding: 10px 0;
-}
-
-.badges {
+#soft-skills {
     ul {
         display: flex;
         justify-content: space-evenly;
@@ -169,7 +249,7 @@ span {
     }
 }
 
-.technologies {
+#technologies {
     ul {
         padding: 15px;
         li {
@@ -183,23 +263,7 @@ span {
     }
 }
 
-// .langues {
-//     ul {
-//         padding: 5px 15px;
-//         display: flex;
-//         justify-content: space-evenly;
-//         li {
-//             img {
-//                 width: 35px;
-//                 height: 30px;
-//                 vertical-align: middle;
-//                 padding-right: 10px;
-//             }
-//         }
-//     }
-// }
-
-.miscallaneous {
+#trophies {
     ul {
         padding: 10px 15px;
         li {
@@ -234,10 +298,7 @@ span {
     }
 }
 
-.links {
-    p {
-        align-self: center;
-    }
+#redirections {
     ul {
         padding: 15px;
         width: 100%;
@@ -245,8 +306,8 @@ span {
         justify-content: space-evenly;
         li {
             img {
-                width: 40px;
-                height: 30px;
+                width: 50px;
+                height: 40px;
                 vertical-align: middle;
                 padding-right: 10px;
             }
@@ -254,7 +315,7 @@ span {
     }
 }
 
-.informations {
+.liens {
     padding-top: 10px;
     li {
         img {
@@ -268,18 +329,44 @@ span {
 
 // ---------- Position ----------
 
+// ----- Splits -----
+
+.title {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-self: center;
+    h2 {
+        grid-column: 1 / 2;
+    }
+    div {
+        grid-column: 2 / 3;
+    }
+}
+
+.split {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-self: center;
+    h4 {
+        grid-column: 1 / 2;
+    }
+    div {
+        grid-column: 2 / 3;
+    }
+}
+
 // ----- Title -----
 
-.headline {
+#headline {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    .strip-left {
+    #strip-left {
         grid-column: 1 / 2;
     }
     h1 {
         grid-column: 2 / 3;
     }
-    .strip-right {
+    #strip-right {
         grid-column: 3 / 4;
     }
 }
@@ -287,67 +374,19 @@ span {
 // --- Intro ---
 
 #introduction {
-    padding: 10px;
-    img {
-        width: 150px;
-        height: 150px;
-        box-sizing: content-box;
-        margin: 0 20px;
-        border-radius: 3px;
-    }
-    #about {
-        h3 {
-            font-weight: 600;
-            color: white;
-            position: relative;
-            display: inline-block;
-            padding: 5px 10px;
-            line-height: 1.2em;
-            z-index: 0;
-            &:before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                transform: skew(-30deg);
-                z-index: -1;
-                border: 1px solid black;
-                background: $darkergrey-ish;
-            }
-        }
-        .assets {
-            display: flex;
-            img {
-                width: 25px;
-                height: 25px;
-                margin: 0;
-                padding-left: 10px;
-            }
-            p {
-                align-self: center;
-            }
-        }
-        p {
-            padding: 10px;
-        }
-    }
-}
-
-#introduction {
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-gap: 10px;
     img {
         grid-column: 1 / 2;
 
         align-self: center;
     }
-    #about {
+    #content {
         grid-column: 2 / 3;
 
         display: grid;
-        grid-template-rows: max-content max-content;
+        grid-template-rows: max-content auto;
         grid-template-areas:
             "fullname title"
             "languages remain";
@@ -355,25 +394,11 @@ span {
         h3 {
             grid-area: fullname;
         }
-        .content {
+        ul {
             grid-area: languages;
-
-            display: flex;
-            flex-direction: column;
         }
         .title {
             grid-area: title;
-
-            display: grid;
-            grid-template-columns: max-content auto;
-            height: 30px;
-            align-self: center;
-            h2 {
-                grid-column: 1 / 2;
-            }
-            div {
-                grid-column: 2 / 3;
-            }
         }
         p {
             grid-area: remain;
@@ -386,7 +411,7 @@ span {
 
 // -- Containers --
 
-.main-body {
+#main-body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     column-gap: 30px;
@@ -394,17 +419,18 @@ span {
     margin: 15px 30px;
 }
 
-.left-container {
+#left-container {
     grid-column: 1 / 2;
 
     display: grid;
+    grid-row-gap: 10px;
     grid-template-rows: repeat(2, min-content);
     grid-template-areas:
         "left-one"
         "left-two";
 }
 
-.right-container {
+#right-container {
     grid-column: 2 / 3;
 
     display: grid;
@@ -417,120 +443,69 @@ span {
 
 // ----- Left-side -----
 
-.left-one {
+#left-one {
     grid-area: left-one;
 
     display: grid;
     grid-template-areas:
         "title"
-        "studies"
         "split-1"
-        "formations"
+        "studies"
         "split-2"
+        "formations"
+        "split-3"
         "experience";
-    .education {
-        // title
+    #parcours {
         grid-area: title;
-
-        display: grid;
-        grid-template-columns: min-content auto;
-        h2 {
-            grid-column: 1 / 2;
-        }
-        div {
-            grid-column: 2 / 3;
-        }
     }
-    .studies {
-        grid-area: studies;
-    }
-    .split-one {
+    #split-one {
         grid-area: split-1;
     }
-    .formations {
-        grid-area: formations;
+    #studies {
+        grid-area: studies;
     }
-    .split-two {
+    #split-two {
         grid-area: split-2;
     }
-    .experience {
+    #formations {
+        grid-area: formations;
+    }
+    #split-three {
+        grid-area: split-3;
+    }
+    #experience {
         grid-area: experience;
     }
 }
 
-.left-two {
+#left-two {
     grid-area: left-two;
 
     display: grid;
     grid-template-areas:
         "title"
-        "badges";
-    .soft-skills {
-        //title
+        "soft-skills";
+    #badges {
         grid-area: title;
-
-        display: grid;
-        grid-template-columns: min-content auto;
-        h2 {
-            grid-column: 1 / 2;
-        }
-        div {
-            grid-column: 2 / 3;
-        }
     }
-    .badges {
-        grid-area: badges;
+    #soft-skills {
+        grid-area: soft-skills;
     }
 }
 
-// .left-three {
-//     grid-area: left-three;
+// ----- Right-side -----
 
-//     display: grid;
-//     grid-template-areas:
-//         "title"
-//         "langues";
-//     .languages {
-//         // title
-//         grid-area: title;
-
-//         display: grid;
-//         grid-template-columns: min-content auto;
-//         h2 {
-//             grid-column: 1 / 2;
-//         }
-//         div {
-//             grid-column: 2 / 3;
-//         }
-//     }
-//     .langues {
-//         grid-area: langues;
-//     }
-// }
-
-// ----- Right-side ----
-
-.right-one {
+#right-one {
     grid-area: right-one;
 
     display: grid;
     grid-template-areas:
         "title"
         "technologies";
-    .skills {
-        // title
+    #qualifications {
         grid-area: title;
-
-        display: grid;
-        grid-template-columns: min-content auto;
-        h2 {
-            grid-column: 1 / 2;
-        }
-        div {
-            grid-column: 2 / 3;
-        }
     }
-    .technologies {
+    #technologies {
         grid-area: technologies;
 
         display: grid;
@@ -544,32 +519,22 @@ span {
     }
 }
 
-.right-two {
+#right-two {
     grid-area: right-two;
 
     display: grid;
     grid-template-areas:
         "title"
-        "miscallaneous";
-    .diverse {
-        // title
+        "trophies";
+    #achievements {
         grid-area: title;
-
-        display: grid;
-        grid-template-columns: min-content auto;
-        h2 {
-            grid-column: 1 / 2;
-        }
-        div {
-            grid-column: 2 / 3;
-        }
     }
-    .miscallaneous {
-        grid-area: miscallaneous;
+    #trophies {
+        grid-area: trophies;
     }
 }
 
-.right-three {
+#right-three {
     grid-area: right-three;
 
     display: grid;
@@ -577,30 +542,10 @@ span {
     grid-template-areas:
         "title"
         "links";
-    .contact {
-        // title
+    #liens {
         grid-area: title;
-
-        display: grid;
-        grid-template-columns: min-content auto;
-        h2 {
-            grid-column: 1 / 2;
-        }
-        div {
-            grid-column: 2 / 3;
-        }
     }
-    .links {
+    #redirections {
         grid-area: links;
-
-        display: grid;
-        grid-template-columns: max-content auto;
-        grid-template-areas: "para list";
-        p {
-            grid-area: para;
-        }
-        ul {
-            grid-area: list;
-        }
     }
 }
