@@ -26,7 +26,7 @@
                 <h2>About me</h2>
                 <div></div>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit, in magni recusandae temporibus culpa officia suscipit facilis minus cumque reiciendis eos velit iste corporis debitis rerum, ipsam dolore voluptates!</p>
+            <p>Jeune apprenant orienté Front-end, suivant une formation de développeur web Junior chez Becode. Je possède un large éventail de compétences, et peux m'adapter selon les besoins, grâce à l'approche unique utilisée lors de mon apprentissage.</p>
         </div>
     </section>
 
@@ -106,11 +106,11 @@
                 </div>
                 <section id="soft-skills">
                     <ul>
-                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Place Holder"></li>
-                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Place Holder"></li>
-                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Place Holder"></li>
-                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Place Holder"></li>
-                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Place Holder"></li>
+                        <li><img src="assets/img/badge_continuouslearner.svg" alt="Continuous Learner Badge" title="Continuous Learner (certification officielle en attente)"></li>
+                        <li><img src="assets/img/badge_customeroriented.svg" alt="Customer Oriented Badge" title="Customer Oriented (certification officielle en attente)"></li>
+                        <li><img src="assets/img/badge_teamplayer.svg" alt="Team Player Badge" title="Team Player (certification officielle en attente)"></li>
+                        <li><img src="assets/img/badge_teammanager.svg" alt="Team Manager Badge" title="Team Manager (certification officielle en attente)"></li>
+                        <li><img src="assets/img/badge_reliable.svg" alt="Reliable Badge" title="(Reliable certification officielle en attente)"></li>
                     </ul>
                 </section>
 

@@ -1,0 +1,14 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="402" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill-rule="evenodd" fill="none">
+   <polygon id="svg_2" points="280,120 360,280 200,280 " fill="#ff8514"/>
+   <polygon id="svg_3" points="120,120 200,280 40,280 " fill="#15232D"/>
+  </g>
+ </g>
+</svg>

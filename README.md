@@ -41,4 +41,4 @@ The goal was to have a structured, short, and original CV, made with PHP and SAS
 
 ## State
 
-Still WIP, stopped July 2nd, 2020.
+Still WIP, stopped July 4th, 2020.
