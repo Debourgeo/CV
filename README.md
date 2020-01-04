@@ -24,7 +24,6 @@ The goal was to have a structured, short, and original CV, made with PHP and SAS
 -   Responsive yet to be finished
 -   Need to be rationalized, SASS-wise.
 -   Some work yet to be done on the Headers and Footers.
--   Work on "splits" and section titles still required.
 
 ## Langages
 
